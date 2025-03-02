@@ -13,5 +13,72 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     font-size: 14px;
+    background-color: var(--grey-900);
+    color: var(--white);
+    font-family: "Inter", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: var(--grey-800);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--grey-700);
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.location {
+    font-size: 0.8rem;
+    color: var(--green);
+    margin: 0.5rem;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+    font-weight: 400;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    width: 16rem;
+}
+
+.link {
+    text-decoration: none;
+    background-color: var(--grey-700);
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.link:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
 }
